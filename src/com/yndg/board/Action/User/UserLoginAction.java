@@ -9,13 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.yndg.board.Action.Action;
 
-public class UserJoinAction implements Action{
+public class UserLoginAction implements Action {
 
 	@Override
 	public void excute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
-		RequestDispatcher dis = req.getRequestDispatcher("user/join.jsp");
+
+		RequestDispatcher dis = req.getRequestDispatcher("user/login.jsp");
 		dis.forward(req, resp);
+		
 		
 	}
 

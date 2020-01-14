@@ -1,4 +1,4 @@
-package com.yndg.board.Action.User;
+package com.yndg.board.Action.Board;
 
 import java.io.IOException;
 
@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.yndg.board.Action.Action;
 
-public class UserJoinAction implements Action{
+public class BoardWriteAction implements Action {
 
 	@Override
 	public void excute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
-		RequestDispatcher dis = req.getRequestDispatcher("user/join.jsp");
+		
+		RequestDispatcher dis = req.getRequestDispatcher("/blog/blog.jsp");
 		dis.forward(req, resp);
 		
 	}
