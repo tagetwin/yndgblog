@@ -92,12 +92,7 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a href="index.jsp"
 						class="nav-link pl-0">Home</a></li>
-					<c:choose>
-					<c:when test="">
-					</c:when>
-					<c:otherwise>
-					</c:otherwise>
-					</c:choose>
+
 					<li class="nav-item"><a href="/board?cmd=list" class="nav-link">Blog</a></li>	
 					<li class="nav-item"><a href="/user?cmd=join" class="nav-link">Join</a></li>
 					<li class="nav-item"><a href="/user?cmd=login" class="nav-link">Login</a></li>

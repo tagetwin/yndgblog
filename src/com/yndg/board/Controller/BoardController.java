@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.yndg.board.Action.Action;
 import com.yndg.board.Action.Board.BoardFactory;
 import com.yndg.board.Action.User.UserFactory;
+import com.yndg.board.dao.UserDao;
 
 @WebServlet("/board")
 public class BoardController extends HttpServlet{
@@ -28,6 +29,7 @@ public class BoardController extends HttpServlet{
 		String cmd = req.getParameter("cmd");
 		Action action = BoardFactory.route(cmd);
 		action.excute(req, resp);
+		
 	}
 	
 }

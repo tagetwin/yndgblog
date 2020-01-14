@@ -5,6 +5,7 @@ import com.yndg.board.Action.Action;
 public class UserFactory {
 
 	public static Action route(String cmd) {
+		System.out.println("userfactory:"+cmd);
 		if(cmd.equals("join")) {
 			return new UserJoinAction();
 		}else if (cmd.equals("joinProc")) {
