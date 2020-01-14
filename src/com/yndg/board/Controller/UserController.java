@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.yndg.board.Action.Action;
 import com.yndg.board.Action.User.UserFactory;
-import com.yndg.board.DB.DBUtil;
 
 @WebServlet("/user")
 public class UserController extends HttpServlet{
