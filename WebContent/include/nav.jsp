@@ -72,7 +72,7 @@
 		</div>
 	</div>
 	<nav
-		class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light"
+		class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light mb-4"
 		id="ftco-navbar">
 		<div class="container d-flex align-items-center">
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -83,7 +83,7 @@
 			<form action="#" class="searchform order-lg-last">
 				<div class="form-group d-flex">
 					<input type="text" class="form-control pl-3" placeholder="Search">
-					<button type="submit" placeholder="" class="form-control search">
+					<button type="submit" class="form-control search">
 						<span class="ion-ios-search"></span>
 					</button>
 				</div>
@@ -93,11 +93,11 @@
 					<li class="nav-item active"><a href="index.jsp"
 						class="nav-link pl-0">Home</a></li>
 
-					<li class="nav-item"><a href="/board?cmd=list" class="nav-link">Blog</a></li>	
-					<li class="nav-item"><a href="/user?cmd=join" class="nav-link">Join</a></li>
+					<li class="nav-item"><a href="/board?cmd=list" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="/user?cmd=join"  class="nav-link">Join</a></li>
 					<li class="nav-item"><a href="/user?cmd=login" class="nav-link">Login</a></li>
-					
-					
+
+
 				</ul>
 			</div>
 		</div>
