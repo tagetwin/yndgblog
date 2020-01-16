@@ -189,18 +189,18 @@ public class UserDao {
 		ResultSet rs = null;
 
 		try {
-			final String SQL = "SELECT * FROM user WHERE username = ? and password = ? ";
+			final String SQL = "SELECT COUNT(*) FROM user WHERE username = ? and password = ? ";
 			pstmt = conn.prepareStatement(SQL);
 			rs = pstmt.executeQuery();
 			User user = null;
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);
 
-			while (rs.next()) {
+			if (rs.next()) {
 				int id = rs.getInt("id");
 				String email = rs.getString("email");
 				Timestamp createTime = rs.getTimestamp("createTime");
-
 				user = new User(id, username, password, email, createTime);
-
 			}
 
 			return user;
